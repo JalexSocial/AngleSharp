@@ -7,7 +7,7 @@ namespace AngleSharp.Css.Dom
     /// Represents a compound selector, which is a chain of simple selectors
     /// that are not separated by a combinator.
     /// </summary>
-    sealed class CompoundSelector : Selectors, ISelector
+    public sealed class CompoundSelector : Selectors, ISelector
     {
         public Boolean Match(IElement element, IElement? scope)
         {

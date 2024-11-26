@@ -8,7 +8,7 @@ namespace AngleSharp.Css.Dom
     /// A list of selectors, which is the basis for CompoundSelector and
     /// SelectorGroup.
     /// </summary>
-    abstract class Selectors : IEnumerable<ISelector>
+    public abstract class Selectors : IEnumerable<ISelector>
     {
         #region Fields
 

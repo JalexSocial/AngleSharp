@@ -3,7 +3,7 @@ namespace AngleSharp.Css.Dom
     using AngleSharp.Dom;
     using System;
 
-    sealed class ClassSelector : ISelector
+    public sealed class ClassSelector : ISelector
     {
         private readonly String _cls;
 
