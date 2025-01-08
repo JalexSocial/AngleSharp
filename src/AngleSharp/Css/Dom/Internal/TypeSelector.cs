@@ -4,7 +4,7 @@ namespace AngleSharp.Css.Dom
     using AngleSharp.Text;
     using System;
 
-    sealed class TypeSelector : ISelector
+    public sealed class TypeSelector : ISelector
     {
         private readonly String _type;
 

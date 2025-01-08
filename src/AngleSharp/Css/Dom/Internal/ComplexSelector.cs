@@ -10,7 +10,7 @@ namespace AngleSharp.Css.Dom
     /// Represents a complex selector, i.e. one or more compound selectors
     /// separated by combinators.
     /// </summary>
-    sealed class ComplexSelector : ISelector
+    public sealed class ComplexSelector : ISelector
     {
         #region Fields
 
@@ -44,6 +44,8 @@ namespace AngleSharp.Css.Dom
                 return sum;
             }
         }
+
+        public String BaseSelector => _combinators.FirstOrDefault().Selector.Text ?? string.Empty;
 
         public String Text
         {

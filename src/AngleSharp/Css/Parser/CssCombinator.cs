@@ -9,7 +9,7 @@ namespace AngleSharp.Css.Parser
     /// <summary>
     /// An enumeration with possible CSS combinator values.
     /// </summary>
-    abstract class CssCombinator
+    public abstract class CssCombinator
     {
         #region Fields
 
