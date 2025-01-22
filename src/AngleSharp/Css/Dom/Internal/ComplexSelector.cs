@@ -46,6 +46,7 @@ namespace AngleSharp.Css.Dom
         }
 
         public String BaseSelector => _combinators.FirstOrDefault().Selector.Text ?? string.Empty;
+        public List<CombinatorSelector> Combinators => _combinators;
 
         public String Text
         {
@@ -153,7 +154,7 @@ namespace AngleSharp.Css.Dom
 
         #region Nested Structure
 
-        private struct CombinatorSelector
+        public struct CombinatorSelector
         {
             public String? Delimiter;
             public Func<IElement, IEnumerable<IElement>>? Transform;
